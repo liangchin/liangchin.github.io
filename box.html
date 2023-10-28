@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Model Demo</title>
+</head>
+<script>
+    function instragram(){
+        alert("@liangggchin")
+    }
+    function birthday(){
+        alert("2010.03.01")
+    }
+    function school(){
+        alert("Wego")
+    }
+    function name(){
+        alert("Crystal Chen")
+    }
+</script>
+<body>
+    <h1>Crystal</h1>
+    <div class="box" onclick="instragram()"> My Instagram</div>
+    <div class="box" onclick="birthday()"> My Birthday </div>
+    <div class="box" onclick="school()")> My School </div>
+    <div class="box" onclick="name()"> My Name </div>
+</body>
+<style>
+    body{
+        background-color: #333
+
+    }
+    h1{
+        color: white;
+        text-align: center;
+        margin: 30px;
+    }
+    .box {
+        width: 400px;
+        height: 70px;
+        background-color: white;
+        padding: 10px;
+        margin: 30px auto;
+        font-size : 20px;
+        text-align: center;
+        border-radius: 10px;
+        line-height: 50px;
+    }
+    #abcdefg{
+        background-color: white;
+    }
+    *{
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+    }
+</style>
+</html>

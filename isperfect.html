@@ -3,32 +3,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Is it a prime number? </title>
+    <title>Is it a perfect number? </title>
     <link rel="stylesheet" href="style.css" />
 </head>
 <body>
     <div class="content">
         input a number: <input type="text" id="num">
-    <div class="box" onclick="isPrime()">Check</div>
+    <div class="box" onclick="isPerfect()">Check</div>
     </div>
     
 </body>
 <script>
-    function isPrime(){
-        num = parseInt(getNum())
-        hasRemainder = true 
+    function isPerfect(){
+        let num = parseInt(getNum())
+        let total = 0
+   
         
-        for(i = 2; i < num; i=i+1){
+        for(i = 1; i < num; i=i+1){
             if(num % i == 0){
-                hasRemainder = false 
-                break
+              total = total + i
             }
         }
 
-        if(hasRemainder == true){
-            alert(num + " is a prime number")
+        if(total == num){
+            alert(num + " is a perfect number")
         }else{
-            alert(num + " is not a prime number")
+            alert(num + " is not a perfect number")
         }
 
     }

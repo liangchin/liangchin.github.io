@@ -39,6 +39,14 @@
         border-radius: 1000px;
         line-height: 50px;
         box-shadow: 0 0 10px 1px rgba(0,0,0,.02);
+        transition: 1.0s;
+    }
+    .box:hover{
+        color: black;
+        background-color: white;
+    }
+    .box:active{
+        scale: 1.1;
     }
     #abcdefg{
         background-color: white;
